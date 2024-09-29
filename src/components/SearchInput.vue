@@ -11,16 +11,16 @@ const onKeyUp = debounce(() => {
   searchStore.query = query.value;
   searchStore.searchLocations();
 
-  const url = new URL(window.location.href)
+  const url = new URL(window.location.href);
 
   // Обновляем параметр query в адресной строке
   if (query.value) {
-    url.searchParams.set('query', query.value)
+    url.searchParams.set('query', query.value);
   } else {
-    url.searchParams.delete('query')
+    url.searchParams.delete('query');
   }
 
-  window.history.replaceState(null, '', url)
+  window.history.replaceState(null, '', url);
 }, 500);
 </script>
 

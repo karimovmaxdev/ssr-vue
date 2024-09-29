@@ -5,10 +5,9 @@ import SearchResult from './components/SearchResult.vue';
 import {computed} from "vue";
 
 const searchStore = useSearchStore();
-const loading = computed(() => searchStore.loading)
-const error = computed(() => searchStore.error)
-const results = computed(() => searchStore.results)
-
+const loading = computed(() => searchStore.loading);
+const error = computed(() => searchStore.error);
+const results = computed(() => searchStore.results);
 </script>
 
 <template>
